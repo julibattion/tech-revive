@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    height: 20px;
+    width: 25px;
+    position: relative;
+    transition: 1.5s;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-family: 'mersadlight';
+    font-weight: 700;
+    color: white;
+    margin-right: 55px;
+}
+
+.index{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow-x: hidden;
+}
+
+.nuestros-servicios{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+}
+
+.nuestros-servicios h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+}
+
+.nuestros-servicios h1 span{
+    color: blue;
+}
+
+.display{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+
+.display .img-display img{
+    width: 420px;
+    height: 500px;
+}
+
+.display .display1 p{
+    align-items: center;
+}
+
+.display .display1 p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    width: 400px;
+    text-align: center;
+}
