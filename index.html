@@ -3,58 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="notebook, computadora, servicio, tecnico, reparacion, consolas, rapido, arreglar, mantenimiento, lenovo, dell.">
+    <meta name="description" content="Servicio tecnico especializado en reparacion de Notebooks, computadoras de escritorio y consolas. Asesoramiento personalizado, rapido y eficaz. Todas las marcas y modelos.">
+    <meta property="og:title" content="Techrevive">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Servicio tecnico especializado en reparacion de Notebooks, computadoras de escritorio y consolas.">
+    <meta property="og:image" content="./img/img-revive.jpg">
     <title>Techrevive</title>
-    <link rel="stylesheet" a href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="icon" href="img/logo2.svg">
+    <link rel="stylesheet" a href="css/style.css">
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" alt="logo de la marca">
-        <nav>
+    <header class="header">
+        <button class="abrir-menu" id="boton-abrir">☰</button>
+        <a href="#inicio"><img src="img/logo.png" alt="logo de la marca"></a>
+        <nav class=".nav-visible" id="nav">
+            <button class="cerrar" id="boton-cerrar">X</button>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <section class="index">
-
+        <section class="index" id="inicio">
+            
             <div>
-                <img src="img/inicio.jpg" alt="imagen del logotipo">
             </div>
 
         </section>
+        
+        <section class="nosotros" id="nosotros">
+        
+            <div class="img-nosotros">
+                <img src="img/local.jpg" class="img-local" alt="imagen del frente del local">
+            </div>
+            
+            <div class="quienes-somos">
+                <h2>Quiénes <span>somos</span></h2>
+                <p>Somos una empresa dedicada a la reparación de notebooks, PC y consolas en Rosario con una trayectoria de más de 5 años en el rubro. Hemos pasado por varios domicilios, empresas y negocios de forma particular, hoy ponemos nuestro local para que tengas a disposición un taller y un laboratorio de alta complejidad especializado en microelectrónica para que dejes tu equipo en las mejores manos. En Techrevive entendemos la importancia y el valor que tiene en el día a día tu equipo, por ello tenemos como bastión la honestidad, la excelencia y la eficacia para poder brindarte el servicio que merece tu dispositivo.</p>
+            </div>
+        
+        </section>
 
-        <section class="#servicios">
+        <section class="servicios" id="servicios">
 
             <div class="nuestros-servicios">
                 <h1>
-                    Nuestros <span>Servicios</span>
+                    Nuestros <span>servicios</span>
                 </h1>
             </div>
 
-            <div class="display">
-                <div class="img-display">
+            <div class="arreglos1" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="400">
                     <img src="img/display.jpg" alt="cambio de display">
+                <div>
+                    <p>Si tu pantalla sufrio un golpe, se agrieto, cambia de color, parpadea constantemente o presenta inconvenientes, no te preocupes, hay una solución. Contamos con un equipo especializado y un laboratorio de alta complejidad para realizar con precisión la extracción de tu pantalla dañada y reemplazarla por una completamente nueva. Además, disponemos de repuestos importados y utilizamos exclusivamente piezas originales, asegurando que tu dispositivo recupere su estado original y pueda ofrecerte un rendimiento óptimo a medio y largo plazo.</p>
+                    <div class="diagnosticos">
+                    <a href="https://api.whatsapp.com/send/?phone=3415024695" target="_blank"><img src="img/diagnosticos.jpg" alt="diagnosticos sin cargo"></a>
+                    </div>
                 </div>
-    
-                <div class="display1">
-                    <p>El cambio de display consiste en reemplazar la pantalla visual de la computadora. Esto implica desmontar la cubierta de la laptop, desconectar cables y retirar con cuidado la pantalla antigua. Luego, se conecta la nueva pantalla en los mismos lugares donde estaba conectada la pantalla anterior, asegurandonos que esté correctamente alineada y conectada. Después, se vuelve a montar la cubierta de la misma.</p>
+            </div>
+
+            <div class="arreglos2" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="400">
+                <div>
+                    <p>¿Sabías que la demora en el encendido de tu equipo, la imposibilidad de abrir más de 3 pestañas de tu navegador sin que se tilde o la lentitud en programas administrativos tiene solución? Muy probablemente tu notebook o PC cuente con buenas prestaciones, pero al no contar con el hardware adecuado rinden al %50 de lo que debería. 
+                    Sacale el %100 del rendimiento a tu equipo con la optimización de hardware: cambios de disco HDD a SSD, ampliación de memoria RAM y otras de las tantas soluciones que ofrecemos en Techrevive para que tu equipo trabaje de manera rápida y opere múltiples tareas sin problema alguno.</p>
+                    <div class="diagnosticos">
+                    <a href="https://api.whatsapp.com/send/?phone=3415024695" target="_blank"><img src="img/diagnosticos.jpg" alt="diagnosticos sin cargo"></a>
+                    </div>
                 </div>
+                    <img src="img/hardware.jpg" alt="optimizacion de hardware">
+            </div>
+            
+            <div class="arreglos1" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="400">
+                    <img src="img/placa-madre.jpg" alt="reparacion de placa madre">
+                <div>
+                    <p>Si tu equipo no volvió a encender, sufrió el derrame de algún líquido o un severo corte de luz, no te precipites a comprar uno nuevo, tiene solución. En Techrevive somos especialistas en la reparación de Notebook, All in One y PC. Contamos con un laboratorio de última tecnología que nos permite realizar cualquier tipo de reparación electrónica en las placas madre y otros componentes.</p>
+                    <div class="diagnosticos">
+                    <a href="https://api.whatsapp.com/send/?phone=3415024695" target="_blank"><img src="img/diagnosticos.jpg" alt="diagnosticos sin cargo"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arreglos2" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="400">
+                <div>
+                    <p>Repuestos nuevos y originales. Si tu teclado presenta fallas en varias de sus teclas, sufrió algún derrame de líquido o dejo de funcionar en su totalidad, es normal y parte del uso propio de tu notebook. Llevamos a cabo un proceso de trabajo metódico para este tipo de problemas, ya que exige el desarme total del equipo para realizar el cambio efectivo del teclado.</p>
+                    <div class="diagnosticos">
+                    <a href="https://api.whatsapp.com/send/?phone=3415024695" target="_blank"><img src="img/diagnosticos.jpg" alt="diagnosticos sin cargo"></a>
+                    </div>
+                </div>
+                    <img src="img/teclado.jpg" alt="cambio de teclado">
+            </div>
+
+            <div class="arreglos1" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="400">
+                    <img src="img/bisagras.jpg" alt="cambio de bisagras">
+                <div>
+                    <p>El problema más frecuente y demandante del service. Las bisagras cuentan con tornillos y soporte en cada uno de sus laterales, los mismos cuentan con una lubricación que se pierde a través del uso. Es importante realizar una reparación inmediata para no perjudicar otros componentes internos del equipo y que la falla sea más grave. Nuestro trabajo  metódico realiza la reparación y lubricación de manera efectiva para que tu equipo pueda seguir siendo utilizado a mediano y largo plazo.</p>
+                    <div class="diagnosticos">
+                    <a href="https://api.whatsapp.com/send/?phone=3415024695" target="_blank"><img src="img/diagnosticos.jpg" alt="diagnosticos sin cargo"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arreglos2" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="400">
+                <div>
+                    <p>Contamos con baterías originales y alternativas, internas y externas. Es importante realizarle un cambio de batería a su equipo, ya que al pasar de los meses/años se va deteriorando su uso y produciendo hinchazón en las celdas de la misma. Esto puede causar derrame de líquido (litio) en el interior de su notebook, afectando asi a componentes internos del dispositivo, y pudiendo causar hasta cortocircuitos no deseados. Además de los daños que ocasionaría en su laptop, puede afectar a su salud, ya que son propensas a explotar en algunos casos. Contamos con un equipo profesional y capacitado para manipular estos repuestos y brindar alternativas eficientes.</p>
+                    <div class="diagnosticos">
+                    <a href="https://api.whatsapp.com/send/?phone=3415024695" target="_blank"><img src="img/diagnosticos.jpg" alt="diagnosticos sin cargo"></a>
+                    </div>
+                </div>
+                    <img src="img/bateria.jpg" alt="cambio de bateria">
             </div>
 
         </section>
 
+        <section class="marcas">
+
+            <div class="titulo">
+                <h2>Especialistas en las siguientes <span>marcas</span></h2>
+            </div>
+
+                <div class="wrapper">
+
+                    <ul class="carousel">
+                        <li class="card">
+                            <div class="img"><img src="img/acer.png" alt="logo acer" class="acer" draggable="false"></div>
+                        </li>
+
+                        <li class="card">
+                            <div class="img"><img src="img/hp.png" alt="logo asus" class="hp" draggable="false"></div>
+                        </li>
+
+                        <li class="card">
+                            <div class="img"><img src="img/bangho.png" alt="logo hp" class="bangho" draggable="false"></div>
+                        </li>
+
+                        <li class="card">
+                            <div class="img"><img src="img/dell.png" alt="logo bangho" class="dell" draggable="false"></div>
+                        </li>
+
+                        <li class="card">
+                            <div class="img"><img src="img/asus.png" alt="logo dell" class="asus" draggable="false"></div>
+                        </li>
+
+                        <li class="card">
+                            <div class="img"><img src="img/lenovo.png" alt="logo lenovo" class="lenovo" draggable="false"></div>
+                        </li>
+                    </ul>
+                </div>
+
+        </section>
+
+        <section class="contacto" id="contacto">
+
+            <div class="container">
+
+                <div class="iframe-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.5691423024623!2d-60.650340725242!3d-32.96238307268196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7abba747e52e1%3A0x831fb2c051968541!2sTechrevive%20-%20Servicios%20Informaticos!5e0!3m2!1ses-419!2sar!4v1705963580049!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="form-container">
+
+                    <div class="inputs">
+
+                        <div class="contactanos">
+                            <h2>Contacto</h2>
+                            <p>Contactate con nosotros, dejá tu consulta y/o comentario y te responderemos a la brevedad.</p>
+                        </div>
+                        <form action="form.php" method="post">
+                        <div class="input-group">
+                            <div class="input-row">
+                                <div class="name">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Nombre">
+                                </div>
+                                <div class="email">
+                                    <input type="text" name="mail" class="form-control" id="mail" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="subject">
+                                <input type="text" name="subject" class="form-control" id="subject" placeholder="Asunto">
+                            </div>
+                            <div class="message">
+                                <textarea name="message" class="form-control" id="message" rows="4" placeholder="Mensaje"></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit" class="btn">Enviar</button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        
+
+        <footer class="footer">
+
+            <div class="tech-footer">
+                <img src="img/techrevive.png" alt="logo empresa" class="techrevive">
+            </div>
+            <hr>
+            <div class="info">
+                <p>Paraguay 2215 | Oficina 1</p>
+                <p>3415024695</p>
+                <p>techrevive.informatica@gmail.com</p>
+                <div class="redes"><a href="https://www.instagram.com/techrevive.service/" target="_blank"><img src="img/instagram.png" alt="logo instagram"></a><p>@techrevive.service</p></div>
+            </div>
+
+        </footer>
+
     </main>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"  defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
