@@ -32,4 +32,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Si no se ha enviado el formulario, redirige al formulario HTML
     header("Location: formulario.html");
 }
-?>
+

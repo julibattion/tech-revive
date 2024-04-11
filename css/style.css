@@ -374,6 +374,11 @@ header nav .cerrar {
     padding: 0 20px;
 }
 
+.form-container .inputs .input-group .message textarea{
+    min-height: 130px;
+    max-height: 160px;
+}
+
 .inputs {
     text-align: center;
     width: 100%;
@@ -440,31 +445,31 @@ header nav .cerrar {
 /*DATOS*/
 
 .datos{
-    display: flex;
-    justify-content: space-evenly;
     margin-bottom: 200px;
 }
 
-.datos div{
+.datos .info{
     font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.datos div h3{
+.datos .info .card{
+    border: none;
+}
+
+.datos .info .card h3{
     font-size: 17px;
     font-weight: 700;
 }
 
-.datos div p{
+.datos .info .card p{
     font-size: 16px;
 }
 
-.datos .imagenes img{
+.datos .info .imagenes img{
     height: 50px;
     width: 50px;
-}
-
-.datos .imagenes{
-    margin-right: -110px;
 }
 
 /*FOOTER*/
